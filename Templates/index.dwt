@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>Untitled Document</title>
-<!-- InstanceEndEditable -->
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 </head>
 <!--
 Design by Free CSS Templates
@@ -21,8 +21,8 @@ Released   : 20131203
 -->
 
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-<link href="css/default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../css/fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
@@ -32,7 +32,7 @@ Released   : 20131203
 	<div id="header" class="container">
 		<!--<div id="menu"></div>-->
 		<div id="logo">
-		  <h1><a href="index.html">Forrest Scharmer</a></h1>
+		  <h1><a href="../index.html">Forrest Scharmer</a></h1>
 		</div>
 	</div>
 </div>
@@ -44,25 +44,25 @@ Released   : 20131203
 
   		  <nav class="menu">
         	<ul>
-            	<li><a href="index.html" accesskey="1" title="">Home</a></li>
-            	<li><a href="aboutme.html" accesskey="2" title="">About Me</a>
+            	<li><a href="../index.html" accesskey="1" title="">Home</a></li>
+            	<li><a href="../aboutme.html" accesskey="2" title="">About Me</a>
                 	<ul>
-						<li><a href="myinterests.html">My Interests</a></li>
-						<li><a href="placesivebeen.html">Places I've Been</a></li>
+						<li><a href="../myinterests.html">My Interests</a></li>
+						<li><a href="../placesivebeen.html">Places I've Been</a></li>
 					</ul>
 				</li>
                 
-       		  <li><a href="photos.html" accesskey="3" title="">Photos</a></li>
+       		  <li><a href="../photos.html" accesskey="3" title="">Photos</a></li>
 				
-                <li><a href="portfolio.html" accesskey="4" title="">Portfolio</a></li>
+                <li><a href="../portfolio.html" accesskey="4" title="">Portfolio</a></li>
                 
-			  <li><a href="myresume.html" accesskey="5" title="">My Resume</a></li>
+			  <li><a href="../myresume.html" accesskey="5" title="">My Resume</a></li>
 
-				<li><a href="blog.html" accesskey="6" title="">Blog</a></li>
+				<li><a href="../blog.html" accesskey="6" title="">Blog</a></li>
                 
-			  <li><a href="donate.html" accesskey="7" title="">Donate</a></li>
+			  <li><a href="../donate.html" accesskey="7" title="">Donate</a></li>
                 
-			  <li><a href="contactme.html" accesskey="8" title="">Contact Me</a></li>
+			  <li><a href="../contactme.html" accesskey="8" title="">Contact Me</a></li>
        		 </ul>
    		</nav>
 
@@ -74,22 +74,13 @@ Released   : 20131203
 
 
 
-<!-- InstanceBeginEditable name="Main" -->
+<!-- TemplateBeginEditable name="Main" -->
 <div id="wrapper1">
-	<div id="welcome" class="container">
-
-  <a href="documents/terminalspace.docx" title="">Existing vs. Proposed Terminal Space at BTV</a>
-  
-  	</div>
-    
-    <div id="welcome" class="container">
-
-  <a href="documents/nationalchallengenotebook.pdf" title="">RWDC National Challenge Notebook</a>
-  
-  	</div>
+  <div id="welcome" class="container">
+    <!--http://www.outsidethebeltway.com/wp-content/uploads/2013/05/NYC-Skyline.jpg-->
+    <img src="../images/nyc.jpg" alt="New York City Skyline" align="center" width="1200" /> </div>
 </div>
-
-<!-- InstanceEndEditable -->
+<!-- TemplateEndEditable -->
 
 
 
@@ -136,4 +127,4 @@ font-size: 11px; color: #9C9E94; text-decoration: none ; text-align: center;">
 
 </body>
 
-<!-- InstanceEnd --></html>
+</html>

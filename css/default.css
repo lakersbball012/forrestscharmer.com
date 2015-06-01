@@ -337,7 +337,6 @@
 
 	#header-wrapper
 	{
-	overflow: hidden;
 	background-size: cover;
 	padding-top: 0em;
 	padding-right: 0em;
@@ -389,6 +388,90 @@
 /* Menu                                                                          */
 /*********************************************************************************/
 
+
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+nav ul {
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	text-align: center;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+	
+	
+nav ul li {
+	display: inline-block;
+}
+	nav ul li:hover {
+		background: #4b545f;
+		background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+	}
+		nav ul li:hover a {
+			color: #fff;
+		}
+	
+	nav ul li a {
+		display: block; padding: 25px 25px;
+		color: #757575; text-decoration: none;
+	}
+
+	nav ul ul {
+	background: #5f6975; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%; z-index:2;
+	}
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #6b727c;
+		border-bottom: 1px solid #575f6a;
+		position: relative;
+		display:block;
+	}
+		nav ul ul li a {
+			padding: 15px 20px;
+			color: #fff;
+		}	
+			nav ul ul li a:hover {
+				background: #4b545f;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 	#menu
 	{
 	color: #30F;
@@ -399,6 +482,73 @@
 		text-align: center;
 	}
 	
+	nav ul ul {
+		display: none;
+	}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+
+	
+	#menu li a, #menu li span
+	{
+	display: inline-block;
+	margin-left: 0.50em;
+	padding: 1em 1.5em;
+	letter-spacing: 0.20em;
+	text-decoration: none;
+	font-size: 0.9em;
+	font-weight: 600;
+	text-transform: uppercase;
+	outline: 0;
+	color: #6FF;
+	}
+	
+	#menu li:hover a, #menu li.active a, #menu li.active span
+	{
+	color: #9C8E6D;
+	}
+	
+	#menu .current_page_item a
+	{
+	background: #999;
+	border-radius: 8px;
+	color: #6FF;
+	}
+	
+	#menu .menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+	}
+ 
+	#menu .sub-menu {
+    width:100%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#30F;
+}
+ 
+	#menu .sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+	#menu .sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+	#menu .sub-menu li a:hover, .sub-menu .current-item a {
+    background:#30F;
+}
+
 	#menu li
 	{
 	display: inline-block;
@@ -437,7 +587,7 @@
 	}
  
 	#menu .sub-menu {
-    width:160%;
+    width:100%;
     padding:5px 0px;
     position:absolute;
     top:100%;
@@ -446,7 +596,7 @@
     opacity:0;
     transition:opacity linear 0.15s;
     box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-    background:#2e2728;
+    background:#30F;
 }
  
 	#menu .sub-menu li {
@@ -460,8 +610,130 @@
 }
  
 	#menu .sub-menu li a:hover, .sub-menu .current-item a {
+    background:#30F;
+}
+
+
+----------------------------------------------------------------------------------------------
+body {
+    background:#bf5c71 url('body-bg.jpg');
+}
+ 
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+*/
+/*----- Menu Outline -----*/
+/*.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
     background:#3e3436;
 }
+ 
+.menu {
+    width:1000px;
+    margin:0px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+/*.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+ 
+/*----- Bottom Level -----*/
+/*.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*********************************************************************************/
 /* Banner                                                                        */
@@ -478,6 +750,7 @@
 	#wrapper1
 	{
 		background: #EDEDED;
+		overflow:hidden;
 	}
 
 	#wrapper2
@@ -505,13 +778,13 @@
 
 	#welcome
 	{
-	overflow: hidden;
 	text-align: center;
 	color: rgba(0,0,0,0.5);
 	padding-top: 2em;
 	padding-right: 0em;
 	padding-bottom: 2em;
 	padding-left: 0em;
+	position: relative;z-index:0;
 	}
 	
 	#welcome .content
@@ -806,4 +1079,3 @@
 	{
 		padding-right: 0.50em;
 	}
-	

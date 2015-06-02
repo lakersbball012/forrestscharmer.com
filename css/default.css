@@ -424,7 +424,7 @@ nav ul li {
 		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
 	}
 		nav ul li:hover a {
-			color: #fff;
+			color: #FFF;
 		}
 	
 	nav ul li a {
@@ -450,6 +450,11 @@ nav ul li {
 			nav ul ul li a:hover {
 				background: #4b545f;
 			}
+			
+	nav a.current {
+  		background:#4b545f;
+		color:#FFF;
+	}
 
 
 
@@ -603,12 +608,26 @@ nav ul li {
 	}
 
 /*********************************************************************************/
-/* Content                                                                       */
+/* ContactMe                                                                       */
 /*********************************************************************************/
 
-	#content
-	{
+	#contact1 {
+		float: left;
+		color: rgba(0,0,0,0.5);
+		padding-top:4em;
+		padding-bottom:4em;
+		padding-left:8em;
+		padding-right:2em;
 	}
+	#contact2 {
+		float: right;
+		color: rgba(0,0,0,0.5);
+		padding-top:4em;
+		padding-bottom:4em;
+		padding-left:2em;
+		padding-right:8em;
+	}
+	
 
 /*********************************************************************************/
 /* Sidebar                                                                       */
@@ -624,13 +643,26 @@ nav ul li {
 
 	#footer
 	{
-		text-align: center;
+		text-align: ;
 	}
 
 	
 	#footer .title span
 	{
 		color: rgba(255,255,255,0.4);
+	}
+	
+	#footer .counter {
+	float: left;
+	padding-top: 4em;
+	padding-right: 1em;
+	padding-bottom: 0em;
+	padding-left: 1em;
+	}
+	
+	#footer .weather {
+		float: right;
+		padding: 0em 1em;
 	}
 
 /*********************************************************************************/
@@ -639,10 +671,13 @@ nav ul li {
 
 	#copyright
 	{
-		overflow: hidden;
-		padding: 5em 0em;
-		border-top: 1px solid rgba(255,255,255,0.08);
-		text-align: center;
+	overflow: hidden;
+	border-top: 1px solid rgba(255,255,255,0.08);
+	text-align: center;
+	padding-top: 1em;
+	padding-right: 0em;
+	padding-bottom: 1em;
+	padding-left: 0em;
 	}
 	
 	#copyright p

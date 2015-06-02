@@ -72,6 +72,28 @@ Released   : 20131203
 
 
 
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- InstanceBeginEditable name="Main" -->
@@ -111,8 +133,7 @@ Released   : 20131203
 
 
 <div id="copyright">
-	
-  </ul>
+
 	<p>Copyright (c) 2015 forrestscharmer.com. All rights reserved. | Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>.
   </p>
     <p>Website Created May 31, 2015</p>
@@ -135,18 +156,23 @@ Released   : 20131203
 
 
 
+<div id="footer" class="container">
 
-<!-- hitwebcounter Code START -->
-<a href="http://www.hitwebcounter.com/" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page=6081065&style=0006&nbdigits=7&type=page&initCount=0" title="my widget for counting" Alt="my widget for counting"   border="0">
-</a><br/>
-<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/counterresources.php" title="MyVisits Counter" 
-target="_blank" style="font-family: Arial, Helvetica, sans-serif; 
-font-size: 11px; color: #9C9E94; text-decoration: none ; text-align: center;">
-</a>   
-
-
-
+	<div class="counter">
+        <!-- hitwebcounter Code START -->
+        <a href="http://www.hitwebcounter.com/" target="_blank">
+        <img src="http://hitwebcounter.com/counter/counter.php?page=6081065&style=0006&nbdigits=7&type=page&initCount=0" title="my widget for counting" Alt="my widget for counting"   border="0">
+        </a><br/>
+        <!-- hitwebcounter.com -->
+    </div>
+	
+    <div class="weather">
+		<span style="display: block !important; width: 180px; text-align: center; font-family: sans-serif; font-size: 12px;"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:10001.1.99999&bannertypeclick=wu_macwhite" title="New York, New York Weather Forecast" target="_blank"><img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_macwhite&airportcode=KNYC&ForcedCity=New York&ForcedState=NY&zip=10001&language=EN" alt="Find more about Weather in New York, NY" width="160" /></a><br></span>
+        
+	</div>
+    
+</div>    
+    
 
 </body>
 

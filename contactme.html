@@ -72,19 +72,101 @@ Released   : 20131203
 
 
 
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- InstanceBeginEditable name="Main" -->
 <div id="wrapper1">
-  <div id="welcome" class="container">
+  <div id="contact1" class="info">
 
+	<h2>Contact Info</h2>
+    <br />
     <li>Email: lakersbball012@gmail.com</li>
-    <li>Twitter: <a href="http://www.twitter.com/foscho012">@foscho012</a></li>
-    <li>Facebook: <a href="http://www.facebook.com/fofo012">facebook.com/fofo012</a></li>
-    <li>Google Plus: +Forrest Scharmer</li>
-    <li>LinkedIn: <a href="http://www.linkedin.com/in/forrestscharmer">Forrest Scharmer</a></li>
+    <li>Twitter: <a href="http://www.twitter.com/foscho012" target="_blank">@foscho012</a></li>
+    <li>LinkedIn: <a href="http://www.linkedin.com/in/forrestscharmer" target="_blank">Forrest Scharmer</a></li>
 
   </div>
+  
+  
+  <div id="contact2">
+  <form name="htmlform" method="post" action="html_form_send.php">
+<table width="450px">
+</tr>
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+ 
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+ 
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+ 
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">
+ </td>
+</tr>
+</table>
+</form>
+
+	</div>
+  
+  
 </div>
 
 <!-- InstanceEndEditable -->
@@ -95,8 +177,7 @@ Released   : 20131203
 
 
 <div id="copyright">
-	
-  </ul>
+
 	<p>Copyright (c) 2015 forrestscharmer.com. All rights reserved. | Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>.
   </p>
     <p>Website Created May 31, 2015</p>
@@ -119,18 +200,23 @@ Released   : 20131203
 
 
 
+<div id="footer" class="container">
 
-<!-- hitwebcounter Code START -->
-<a href="http://www.hitwebcounter.com/" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page=6081065&style=0006&nbdigits=7&type=page&initCount=0" title="my widget for counting" Alt="my widget for counting"   border="0">
-</a><br/>
-<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/counterresources.php" title="MyVisits Counter" 
-target="_blank" style="font-family: Arial, Helvetica, sans-serif; 
-font-size: 11px; color: #9C9E94; text-decoration: none ; text-align: center;">
-</a>   
-
-
-
+	<div class="counter">
+        <!-- hitwebcounter Code START -->
+        <a href="http://www.hitwebcounter.com/" target="_blank">
+        <img src="http://hitwebcounter.com/counter/counter.php?page=6081065&style=0006&nbdigits=7&type=page&initCount=0" title="my widget for counting" Alt="my widget for counting"   border="0">
+        </a><br/>
+        <!-- hitwebcounter.com -->
+    </div>
+	
+    <div class="weather">
+		<span style="display: block !important; width: 180px; text-align: center; font-family: sans-serif; font-size: 12px;"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:10001.1.99999&bannertypeclick=wu_macwhite" title="New York, New York Weather Forecast" target="_blank"><img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_macwhite&airportcode=KNYC&ForcedCity=New York&ForcedState=NY&zip=10001&language=EN" alt="Find more about Weather in New York, NY" width="160" /></a><br></span>
+        
+	</div>
+    
+</div>    
+    
 
 </body>
 
